@@ -7,3 +7,6 @@
 # Datos fuente (CSV pesados, no se versionan)
 data/ingesta1/*.csv
 data/ingesta2/*.csv
+
+# CSV exportados para Power BI (se regeneran con export_to_csv.py)
+exports/*.csv
