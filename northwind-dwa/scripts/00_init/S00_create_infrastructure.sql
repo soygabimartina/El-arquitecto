@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS DQM_LOG_EJECUCION (
     script_nombre   TEXT    NOT NULL,
     fecha_inicio    TEXT    NOT NULL,
     fecha_fin       TEXT,
-    resultado       TEXT    CHECK(resultado IN ('RUNNING','OK','ERROR','WARNING')),
+    resultado       TEXT    CHECK(resultado IN ('OK','ERROR','WARNING')),
     mensaje         TEXT,
     registros_proc  INTEGER DEFAULT 0
 );
